@@ -1,6 +1,9 @@
 # CombiGraphz
 A tool created to assist with drawing graphs.
 
+<b>Travis-build:<br></b>
+[![Build Status](https://travis-ci.org/ChaosCat/CombiGraphz.svg?branch=master)](https://travis-ci.org/ChaosCat/CombiGraphz)
+
 <h3><b>currently under (sort-of) active development</b></h3>
 
 the project is in it's development phase, it is far from being a finished end-user product
