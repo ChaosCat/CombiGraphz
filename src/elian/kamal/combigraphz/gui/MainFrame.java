@@ -1,4 +1,4 @@
-package elian.kamal.combigraphs.gui;
+package elian.kamal.combigraphz.gui;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -26,9 +26,9 @@ import javax.swing.border.Border;
 import javax.swing.border.EmptyBorder;
 import javax.swing.border.LineBorder;
 
-import elian.kamal.combigraphs.core.Edge;
-import elian.kamal.combigraphs.core.Graph;
-import elian.kamal.combigraphs.core.Vertex;
+import elian.kamal.combigraphz.core.Edge;
+import elian.kamal.combigraphz.core.Graph;
+import elian.kamal.combigraphz.core.Vertex;
 
 public class MainFrame extends JFrame implements ActionListener {
 

@@ -1,4 +1,4 @@
-package elian.kamal.combigraphs.core;
+package elian.kamal.combigraphz.core;
 
 //On hold for the moment
 public class P2PEdge {

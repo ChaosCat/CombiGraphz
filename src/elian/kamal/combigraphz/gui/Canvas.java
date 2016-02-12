@@ -1,4 +1,4 @@
-package elian.kamal.combigraphs.gui;
+package elian.kamal.combigraphz.gui;
 
 import java.awt.Color;
 import java.awt.Graphics;
@@ -10,7 +10,7 @@ import java.awt.event.MouseMotionListener;
 
 import javax.swing.JPanel;
 
-import elian.kamal.combigraphs.core.Graph;
+import elian.kamal.combigraphz.core.Graph;
 
 public class Canvas extends JPanel implements MouseListener, MouseMotionListener, KeyListener {
 

@@ -1,4 +1,4 @@
-package elian.kamal.combigraphs.core;
+package elian.kamal.combigraphz.core;
 
 import java.awt.Image;
 

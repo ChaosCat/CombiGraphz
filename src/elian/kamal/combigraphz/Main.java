@@ -1,7 +1,7 @@
-package elian.kamal.combigraphs;
+package elian.kamal.combigraphz;
 
-import elian.kamal.combigraphs.core.Graph;
-import elian.kamal.combigraphs.gui.MainFrame;
+import elian.kamal.combigraphz.core.Graph;
+import elian.kamal.combigraphz.gui.MainFrame;
 
 public class Main {
 
