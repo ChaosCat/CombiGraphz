@@ -15,9 +15,9 @@ public class Vertex {
      * Vertex constructor, creates a new Vertex object in correspondence to
      * given name, x position and y position values
      *
-     * @param name
-     * @param xPos
-     * @param yPos
+     * @param name name of vertex
+     * @param xPos x position of vertex
+     * @param yPos y position of vertex
      */
     public Vertex(String name, int xPos, int yPos) {
         this.name = name;
@@ -34,7 +34,7 @@ public class Vertex {
 
     /**
      * Default constructor, creates a new Vertex object with the following
-     * default value: Name - "NAME" X position - 0 Y position - 0
+     * NOTE: default value: Name = "NAME", X position = 0, Y position = 0
      */
     public Vertex() {
         this.name = "NAME";
@@ -61,7 +61,7 @@ public class Vertex {
     /**
      * Sets the vertex name
      *
-     * @param name
+     * @param name the name to be set
      */
     public void setName(String name) {
         this.name = name;
@@ -79,7 +79,7 @@ public class Vertex {
     /**
      * Sets the X position of the vertex
      *
-     * @param xPos
+     * @param xPos the X position to be set
      */
     public void setXPos(int xPos) {
         this.xPos = xPos;
@@ -88,7 +88,7 @@ public class Vertex {
     /**
      * Returns the Y position of the vertex
      *
-     * @return yPos
+     * @return yPos the Y position to be set
      */
     public int getYPos() {
         return this.yPos;
@@ -97,7 +97,7 @@ public class Vertex {
     /**
      * Sets the Y position of the vertex
      *
-     * @param yPos
+     * @param yPos the Y position of the vertex
      */
     public void setYPos(int yPos) {
         this.yPos = yPos;

@@ -35,7 +35,7 @@ public class Graph {
     /**
      * Returns the vertex at a specific index
      *
-     * @param index
+     * @param index the specified index
      * @return the vertex at the specified index
      */
     public Vertex getVertexAt(int index) {
@@ -54,7 +54,7 @@ public class Graph {
     /**
      * Adds an edge at the first null value of the vertices array
      *
-     * @param v - Vertex to add
+     * @param v vertex to add
      */
     public void addVertex(Vertex v) {
         boolean added = false;
@@ -71,7 +71,7 @@ public class Graph {
     /**
      * Adds an edge at the first null value of the edges array
      *
-     * @param e - Edge to add
+     * @param e Edge to add
      */
     public void addEdge(Edge e) {
         boolean added = false;
@@ -89,7 +89,7 @@ public class Graph {
     /**
      * Deletes a vertex at a specific valid index
      *
-     * @param index
+     * @param index the index of the vertex to be deleted
      */
     public void delVertex(int index) {
         if (this.vertecies[index] != null) {
@@ -120,7 +120,7 @@ public class Graph {
     /**
      * Deletes an edge at a specified valid index
      *
-     * @param index
+     * @param index the index of the edge to be deleted
      */
     public void delEdge(int index) {
         if (this.edges[index] != null) {
@@ -199,7 +199,7 @@ public class Graph {
      * Prints the vertex array which has been specified (prints null if vertex
      * is unassigned)
      *
-     * @param va - The vertex array to be printed
+     * @param va The vertex array to be printed
      */
     public void printVertexArray(Vertex[] va) {
         String array = "[";

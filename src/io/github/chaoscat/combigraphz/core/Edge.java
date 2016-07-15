@@ -18,9 +18,9 @@ public class Edge {
     /**
      * The constructor for an edge between two vertices
      *
-     * @param name - the name of the edge
-     * @param sV   - the vertex which the edge goes out from
-     * @param eV   - the vertex which the edge points towards
+     * @param name the name of the edge
+     * @param sV the vertex which the edge goes out from
+     * @param eV the vertex which the edge points towards
      */
     public Edge(String name, Vertex sV, Vertex eV) {
         this.selfPointed = false;
@@ -37,8 +37,8 @@ public class Edge {
     /**
      * The constructor for a self pointing edge
      *
-     * @param name - the name of the edge
-     * @param v    - the vertex which the edge points towards
+     * @param name the name of the edge
+     * @param v the vertex which the edge points towards
      */
     public Edge(String name, Vertex v) {
         this.selfPointed = true;
@@ -68,7 +68,7 @@ public class Edge {
     /**
      * Sets the edge name
      *
-     * @param name
+     * @param name name of the edge to be set
      */
     public void setName(String name) {
         this.name = name;
@@ -87,7 +87,7 @@ public class Edge {
      * Sets the X position of the edge to a specified value (in case which it is
      * self pointed), returns the X position of the starting vertex otherwise
      *
-     * @param xPos
+     * @param xPos the X position to be set
      */
     public void setXPos(int xPos) {
         this.xPos = xPos;
@@ -107,7 +107,7 @@ public class Edge {
      * Sets the Y position of the edge to a specified value (in case which it is
      * self pointed)
      *
-     * @param yPos
+     * @param yPos the Y position to be set
      */
     public void setYPos(int yPos) {
         this.yPos = yPos;

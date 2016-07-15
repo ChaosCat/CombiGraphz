@@ -17,7 +17,7 @@ public class Canvas extends JPanel implements MouseListener, MouseMotionListener
     /**
      * The constructor for the graph canvas, takes a graph object as a parameter
      *
-     * @param graph - The graph which the canvas should implement graphically
+     * @param graph The graph which the canvas should implement graphically
      */
     public Canvas(Graph graph) {
         this.setBackground(Color.WHITE);
@@ -158,7 +158,7 @@ public class Canvas extends JPanel implements MouseListener, MouseMotionListener
     /**
      * Sets the graph of the canvas to a specified graph object
      *
-     * @param graph - The graph to use
+     * @param graph The graph to use
      */
     public void setGraph(Graph graph) {
         this.graph = graph;

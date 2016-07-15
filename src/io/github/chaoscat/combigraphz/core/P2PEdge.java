@@ -10,9 +10,9 @@ public class P2PEdge {
     /**
      * The constructor for an edge between two vertices
      *
-     * @param name - the name of the edge
-     * @param sV   - the vertex which the edge goes out from
-     * @param eV   - the vertex which the edge points towards
+     * @param name the name of the edge
+     * @param sV the vertex which the edge goes out from
+     * @param eV the vertex which the edge points towards
      */
     public P2PEdge(String name, Vertex sV, Vertex eV) {
         this.name = name;
@@ -36,7 +36,7 @@ public class P2PEdge {
     /**
      * Sets the edge name
      *
-     * @param name
+     * @param name the name of the edge
      */
     public void setName(String name) {
         this.name = name;
@@ -50,7 +50,7 @@ public class P2PEdge {
     }
 
     /**
-     * @param startingVertex - the startingVertex to set
+     * @param startingVertex the startingVertex to set
      */
     public void setStartingVertex(Vertex startingVertex) {
         this.startingVertex = startingVertex;
@@ -64,7 +64,7 @@ public class P2PEdge {
     }
 
     /**
-     * @param endingVertex - the endingVertex to set
+     * @param endingVertex the endingVertex to set
      */
     public void setEndingVertex(Vertex endingVertex) {
         this.endingVertex = endingVertex;
@@ -78,7 +78,7 @@ public class P2PEdge {
     }
 
     /**
-     * @param xStartPos - the xStartPos to set
+     * @param xStartPos the xStartPos to set
      */
     public void setxStartPos(int xStartPos) {
         this.xStartPos = xStartPos;
@@ -92,7 +92,7 @@ public class P2PEdge {
     }
 
     /**
-     * @param yStartPos - the yStartPos to set
+     * @param yStartPos the yStartPos to set
      */
     public void setyStartPos(int yStartPos) {
         this.yStartPos = yStartPos;
@@ -106,7 +106,7 @@ public class P2PEdge {
     }
 
     /**
-     * @param xEndPos - the xEndPos to set
+     * @param xEndPos the xEndPos to set
      */
     public void setxEndPos(int xEndPos) {
         this.xEndPos = xEndPos;
@@ -120,7 +120,7 @@ public class P2PEdge {
     }
 
     /**
-     * @param yEndPos - the yEndPos to set
+     * @param yEndPos the yEndPos to set
      */
     public void setyEndPos(int yEndPos) {
         this.yEndPos = yEndPos;

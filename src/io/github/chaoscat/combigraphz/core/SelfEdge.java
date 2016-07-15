@@ -14,8 +14,8 @@ public class SelfEdge {
     /**
      * The constructor for a self pointing edge
      *
-     * @param name - the name of the edge
-     * @param v    - the vertex which the edge points towards
+     * @param name the name of the edge
+     * @param v the vertex which the edge points towards
      */
     public SelfEdge(String name, Vertex v) {
         this.name = name;
@@ -35,6 +35,8 @@ public class SelfEdge {
     }
 
     /**
+     * Returns the vertex of the self-edge
+     *
      * @return the vertex
      */
     public Vertex getVertex() {
@@ -42,13 +44,18 @@ public class SelfEdge {
     }
 
     /**
-     * @param vertex - the vertex to set
+     * Sets the vertex of the self-edge
+     *
+     * @param vertex the vertex to set
      */
     public void setVertex(Vertex vertex) {
         this.vertex = vertex;
     }
 
     /**
+     * Returns the image of the self-edge
+     * NOTE: Currently always returns the same image
+     *
      * @return the image
      */
     public Image getImage() {
@@ -56,13 +63,17 @@ public class SelfEdge {
     }
 
     /**
-     * @param image - the image to set
+     * Sets a new image to the self-edge
+     *
+     * @param image the image to set
      */
     public void setImage(Image image) {
         this.image = image;
     }
 
     /**
+     * Returns the self-edge X position
+     *
      * @return the xPos
      */
     public int getXPos() {
@@ -70,13 +81,17 @@ public class SelfEdge {
     }
 
     /**
-     * @param xPos - the xPos to set
+     * Sets the self-edge X position
+     *
+     * @param xPos the xPos to set
      */
     public void setXPos(int xPos) {
         this.xPos = xPos;
     }
 
     /**
+     * Returns the self-edge Y position
+     *
      * @return the yPos
      */
     public int getYPos() {
@@ -84,7 +99,9 @@ public class SelfEdge {
     }
 
     /**
-     * @param yPos - the yPos to set
+     * Sets the self-edge X position
+     *
+     * @param yPos the yPos to set
      */
     public void setYPos(int yPos) {
         this.yPos = yPos;

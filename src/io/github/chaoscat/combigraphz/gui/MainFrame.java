@@ -27,6 +27,8 @@ public class MainFrame extends JFrame implements ActionListener {
 
     /**
      * Create the frame.
+     *
+     * @param graph graph which the frame should be based upon
      */
     public MainFrame(Graph graph) {
         this.setTitle("CombiGraphz");
