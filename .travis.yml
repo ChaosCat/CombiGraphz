@@ -5,4 +5,4 @@ jdk:
   - openjdk6
 os:
   - windows
-  - linux       
+  - linux

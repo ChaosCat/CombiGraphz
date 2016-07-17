@@ -2,6 +2,7 @@ package io.github.chaoscat.combigraphz.gui;
 
 import io.github.chaoscat.combigraphz.core.Edge;
 import io.github.chaoscat.combigraphz.core.Graph;
+import io.github.chaoscat.combigraphz.core.Util;
 import io.github.chaoscat.combigraphz.core.Vertex;
 
 import javax.swing.*;
@@ -22,7 +23,6 @@ public class MainFrame extends JFrame implements ActionListener {
      * Generated serial version UID.
      */
     private static final long serialVersionUID = -3960130962302213052L;
-    JPanel contentPane;
     private Canvas canvas;
 
     /**
@@ -80,10 +80,10 @@ public class MainFrame extends JFrame implements ActionListener {
 
         menuBar.add(toolMenu);
 
-        this.contentPane = new JPanel();
-        this.contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
-        this.setContentPane(this.contentPane);
-        this.contentPane.setLayout(new BorderLayout(0, 0));
+        JPanel contentPane = new JPanel();
+        contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+        this.setContentPane(contentPane);
+        contentPane.setLayout(new BorderLayout(0, 0));
 
         this.canvas = new Canvas(graph);
         contentPane.add(canvas, BorderLayout.CENTER);
@@ -142,7 +142,22 @@ public class MainFrame extends JFrame implements ActionListener {
         nameLabel.setFont(new Font("Blackadder ITC", 0, 18));
         vertexFrame.add(nameLabel);
 
-        JTextArea nameTextArea = new JTextArea();
+        JTextField nameTextArea = new JTextField();
+        nameTextArea.addKeyListener(new KeyListener() {
+            @Override
+            public void keyTyped(KeyEvent e) {
+                if (nameTextArea.getText().length() > 12)
+                    e.consume();
+            }
+
+            @Override
+            public void keyPressed(KeyEvent e) {
+            }
+
+            @Override
+            public void keyReleased(KeyEvent e) {
+            }
+        });
         nameTextArea.setBorder(border);
         vertexFrame.add(nameTextArea);
 
@@ -150,7 +165,7 @@ public class MainFrame extends JFrame implements ActionListener {
         xPosLabel.setFont(new Font("Blackadder ITC", 0, 18));
         vertexFrame.add(xPosLabel);
 
-        JTextArea xPosTextArea = new JTextArea();
+        JTextField xPosTextArea = new JTextField();
         xPosTextArea.addKeyListener(new KeyListener() {
             @Override
             public void keyPressed(KeyEvent ke) {
@@ -162,8 +177,7 @@ public class MainFrame extends JFrame implements ActionListener {
 
             @Override
             public void keyTyped(KeyEvent ke) {
-                int keyCode = ke.getKeyChar();
-                if (keyCode != 8 && (keyCode < 48 || keyCode > 57 || xPosTextArea.getText().length() > 2))
+                if (Util.isNotNumFriendlyKey(ke.getKeyChar()))
                     ke.consume();
             }
         });
@@ -174,21 +188,20 @@ public class MainFrame extends JFrame implements ActionListener {
         yPosLabel.setFont(new Font("Blackadder ITC", 0, 18));
         vertexFrame.add(yPosLabel);
 
-        JTextArea yPosTextArea = new JTextArea();
+        JTextField yPosTextArea = new JTextField();
         yPosTextArea.setBorder(border);
         yPosTextArea.addKeyListener(new KeyListener() {
             @Override
             public void keyPressed(KeyEvent ke) {
             }
-
             @Override
             public void keyReleased(KeyEvent ke) {
             }
 
             @Override
             public void keyTyped(KeyEvent ke) {
-                int keyCode = ke.getKeyChar();
-                if (keyCode != 8 && (keyCode < 48 || keyCode > 57 || yPosTextArea.getText().length() > 2))
+                if (Util.isNotNumFriendlyKey(ke.getKeyChar()) &&
+                        yPosTextArea.getText().length() < canvas.getSize().getHeight() % 100)
                     ke.consume();
             }
         });
@@ -240,7 +253,7 @@ public class MainFrame extends JFrame implements ActionListener {
             nameLabel2.setFont(new Font("Blackadder ITC", 0, 18));
             edgeFrame.add(nameLabel2);
 
-            JTextArea nameTextArea2 = new JTextArea();
+            JTextField nameTextArea2 = new JTextField();
             nameTextArea2.setBorder(border2);
             edgeFrame.add(nameTextArea2);
 

@@ -1,11 +1,19 @@
 package io.github.chaoscat.combigraphz.core;
 
-import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
 import java.io.IOException;
 import java.net.URL;
 
+import static javax.imageio.ImageIO.read;
+
+/**
+ * The Edge class, contains basic properties as well as constructors,
+ * getters, and setters for the two types of edges (Point-to-Point
+ * and self-edge)
+ *
+ * @author Elian Kamal
+ */
 public class Edge {
 
     private String name;
@@ -48,7 +56,7 @@ public class Edge {
         this.yPos = v.getYPos();
         URL imageURL = getClass().getClassLoader().getResource("io/github/chaoscat/combigraphz/resources/Self-edge.png");
         try {
-            this.image = ImageIO.read(imageURL);
+            this.image = read(imageURL);
         } catch (IOException ex) {
             JOptionPane.showMessageDialog(null, "An error has occurred while loading Self-edge image from the path" + imageURL.toString(), "Error while loading image", JOptionPane.ERROR_MESSAGE, null);
             ex.printStackTrace();

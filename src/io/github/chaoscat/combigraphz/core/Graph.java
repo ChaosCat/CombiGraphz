@@ -203,8 +203,8 @@ public class Graph {
      */
     public void printVertexArray(Vertex[] va) {
         String array = "[";
-        for (int i = 0; i < va.length; i++) {
-            array = va[i] == null ? array + "null, " : array + va[i].getName() + ", ";
+        for (Vertex aVa : va) {
+            array = aVa == null ? array + "null, " : array + aVa.getName() + ", ";
         }
         array = array + "]";
         System.out.println(array);

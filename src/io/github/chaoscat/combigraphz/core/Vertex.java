@@ -5,6 +5,11 @@ import java.awt.*;
 import java.io.IOException;
 import java.net.URL;
 
+/**
+ * The vertex class
+ *
+ * @author Elian Kamal
+ */
 public class Vertex {
 
     private String name;
