@@ -1,3 +1,10 @@
+//                 Copyright 2016 Elian Kamal
+//
+//   Licensed under the Apache License, Version 2.0 (the "License");
+//   you may not use this file except in compliance with the License.
+//   You may obtain a copy of the License at
+//
+//       http://www.apache.org/licenses/LICENSE-2.0
 package io.github.chaoscat.combigraphz.core;
 
 import javax.imageio.ImageIO;
@@ -7,8 +14,13 @@ import java.net.URL;
 
 /**
  * The vertex class
+ * Contains basic properties as well as constructors,
+ * getters, and setters for the vertecies
+ * implemented graphically by the Canvas class through
+ * the Graph class
  *
  * @author Elian Kamal
+ * @version 1.0
  */
 public class Vertex {
 

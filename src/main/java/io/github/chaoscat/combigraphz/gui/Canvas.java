@@ -1,3 +1,10 @@
+//                 Copyright 2016 Elian Kamal
+//
+//   Licensed under the Apache License, Version 2.0 (the "License");
+//   you may not use this file except in compliance with the License.
+//   You may obtain a copy of the License at
+//
+//       http://www.apache.org/licenses/LICENSE-2.0
 package io.github.chaoscat.combigraphz.gui;
 
 import io.github.chaoscat.combigraphz.core.Graph;
@@ -6,6 +13,15 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
+/**
+ * The canvas class
+ * Implements the graph class/methods graphically
+ * by extending a JPanel which is utilized by the
+ * MainFrame class and overriding it's paint methods.
+ *
+ * @author Elian Kamal
+ * @version 1.0
+ */
 public class Canvas extends JPanel implements MouseListener, MouseMotionListener, KeyListener {
 
     /**

@@ -1,7 +1,26 @@
+//                 Copyright 2016 Elian Kamal
+//
+//   Licensed under the Apache License, Version 2.0 (the "License");
+//   you may not use this file except in compliance with the License.
+//   You may obtain a copy of the License at
+//
+//       http://www.apache.org/licenses/LICENSE-2.0
 package io.github.chaoscat.combigraphz.core;
 
 import javax.swing.*;
 
+/**
+ * The graph class
+ * provides as a structure and method container
+ * for vertecies and edges, which basically
+ * construct a graph.
+ * It is implemented by the canvas and it
+ * contains most of the functions handling
+ * the object management on the scene
+ *
+ * @author Elian Kamal
+ * @version 1.0
+ */
 public class Graph {
 
     private Vertex vertecies[];

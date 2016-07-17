@@ -1,3 +1,10 @@
+//                 Copyright 2016 Elian Kamal
+//
+//   Licensed under the Apache License, Version 2.0 (the "License");
+//   you may not use this file except in compliance with the License.
+//   You may obtain a copy of the License at
+//
+//          http://www.apache.org/licenses/LICENSE-2.0
 package io.github.chaoscat.combigraphz.gui;
 
 import io.github.chaoscat.combigraphz.core.Edge;
@@ -17,6 +24,17 @@ import java.awt.event.KeyListener;
 import java.util.Timer;
 import java.util.TimerTask;
 
+/**
+ * The MainFrame class
+ * contains the UI of the program and the Canvas
+ * which implements the Graph class graphically.
+ * The UI options affect the Graph class and thus
+ * updates the Canvas in correspondence to the
+ * altered Graph.
+ *
+ * @author Elian Kamal
+ * @version 1.0
+ */
 public class MainFrame extends JFrame implements ActionListener {
 
     /**

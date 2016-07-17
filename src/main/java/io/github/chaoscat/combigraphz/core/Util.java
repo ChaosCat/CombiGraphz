@@ -1,9 +1,19 @@
+//                 Copyright 2016 Elian Kamal
+//
+//   Licensed under the Apache License, Version 2.0 (the "License");
+//   you may not use this file except in compliance with the License.
+//   You may obtain a copy of the License at
+//
+//       http://www.apache.org/licenses/LICENSE-2.0
 package io.github.chaoscat.combigraphz.core;
 
 import java.awt.event.KeyEvent;
 
 /**
- * Created by Elian on 7/16/2016.
+ * A utility class with static methods
+ *
+ * @author Elian Kamal
+ * @version 1.0
  */
 public final class Util {
 

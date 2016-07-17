@@ -1,3 +1,10 @@
+//                 Copyright 2016 Elian Kamal
+//
+//   Licensed under the Apache License, Version 2.0 (the "License");
+//   you may not use this file except in compliance with the License.
+//   You may obtain a copy of the License at
+//
+//       http://www.apache.org/licenses/LICENSE-2.0
 package io.github.chaoscat.combigraphz.core;
 
 import javax.swing.*;
@@ -8,9 +15,12 @@ import java.net.URL;
 import static javax.imageio.ImageIO.read;
 
 /**
- * The Edge class, contains basic properties as well as constructors,
+ * The Edge class
+ * Contains basic properties as well as constructors,
  * getters, and setters for the two types of edges (Point-to-Point
  * and self-edge)
+ * implemented graphically by the Canvas class through
+ * the Graph class
  *
  * @author Elian Kamal
  */
