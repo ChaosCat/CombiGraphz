@@ -105,7 +105,7 @@ public class Graph {
     /**
      * Orders the graph's vertices, valid vertices before null values
      */
-    private void reOrderVertecies() {
+    public void reOrderVertecies() {
         Vertex[] modA = new Vertex[this.vertecies.length];
         int counter = 0;
         for (int i = 0; i < modA.length; i++) {
@@ -141,7 +141,9 @@ public class Graph {
                 System.out.println("Conditions: \n" + "Exists: " + (this.getEdges()[i] != null) +
                         "\nMissing start: " + (this.getEdges()[i].getStartVertex() == null) +
                         "\nMissing ending:" + (this.getEdges()[i].getEndingVertex() == null));
-                this.delEdge(i);
+                this.edges[i] = null;
+                System.out.println("Clean edge pass: " + i);
+                this.printEdgeArray(this.edges);
             }
         }
     }
@@ -183,7 +185,7 @@ public class Graph {
     /**
      * Orders the graph's edges, valid edges before null values
      */
-    private void reOrderEdges() {
+    public void reOrderEdges() {
         Edge[] modA = new Edge[this.edges.length];
         int counter = 0;
         for (int i = 0; i < modA.length; i++) {
@@ -199,14 +201,51 @@ public class Graph {
      * Prints the vertex array which has been specified (prints null if vertex
      * is unassigned)
      *
-     * @param va The vertex array to be printed
+     * @param vArr The vertex array to be printed
      */
-    public void printVertexArray(Vertex[] va) {
+    public void printVertexArray(Vertex[] vArr) {
         String array = "[";
-        for (Vertex aVa : va) {
-            array = aVa == null ? array + "null, " : array + aVa.getName() + ", ";
+        for (Vertex v : vArr) {
+            array = v == null ? array + "null, " : array + v.getName() + ", ";
         }
-        array = array + "]";
+        array = array.substring(0, array.length() - 2) + "]";
         System.out.println(array);
+    }
+
+    /**
+     * Prints the edge array which has been specified (prints null if edge
+     * is unassigned)
+     *
+     * @param eArr The edge array to be printed
+     */
+    public void printEdgeArray(Edge[] eArr) {
+        String array = "[";
+        for (Edge e : eArr) {
+            array = e == null ? array + "null, " : array + e.getName() + ", ";
+        }
+        array = array.substring(0, array.length() - 2) + "]";
+        System.out.println(array);
+    }
+
+    /**
+     * Returns the number of edges attached to a specified vertex
+     *
+     * @param v the vertex which it's edges should be counted
+     * @return the number of attached edges
+     */
+    public int getNumOfAttachedEdges(Vertex v) {
+        int result = 0;
+        for (Edge e : this.edges)
+            if (
+                    (e != null && v != null && e.getStartVertex() != null
+                            && e.getEndingVertex() != null && e.getVertex() == null
+                            && (e.getStartVertex().equals(v) || e.getEndingVertex().equals(v)))
+                            ^
+                            (e != null && v != null && e.getStartVertex() == null
+                                    && e.getEndingVertex() == null && e.getVertex() != null
+                                    && e.getVertex().equals(v))
+                    )
+                result++;
+        return result;
     }
 }

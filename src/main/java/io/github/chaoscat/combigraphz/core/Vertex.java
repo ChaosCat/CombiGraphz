@@ -29,7 +29,7 @@ public class Vertex {
         this.xPos = xPos;
         this.yPos = yPos;
         this.image = null;
-        URL imageURL = getClass().getClassLoader().getResource("io/github/chaoscat/combigraphz/resources/Vertex.png");
+        URL imageURL = getClass().getClassLoader().getResource("Vertex.png");
         try {
             this.image = ImageIO.read(imageURL);
         } catch (IOException ex) {
@@ -46,7 +46,7 @@ public class Vertex {
         this.xPos = 0;
         this.yPos = 0;
         this.image = null;
-        URL imageURL = getClass().getClassLoader().getResource("io/github/chaoscat/combigraphz/resources/Vertex.png");
+        URL imageURL = getClass().getClassLoader().getResource("Vertex.png");
         try {
             this.image = ImageIO.read(imageURL);
         } catch (IOException ex) {

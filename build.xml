@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<project name="Combigraphz" basedir="." default="test">
-    <target name="test">
-        <junit haltonfailure="true" showoutput="true" printsummary="true">
-            <test name="io.github.chaoscat.combigraphz.core.CoreTestSuite"/>
-        </junit>
-    </target>
-</project>

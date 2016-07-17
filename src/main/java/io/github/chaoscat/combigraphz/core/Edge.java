@@ -27,8 +27,8 @@ public class Edge {
      * The constructor for an edge between two vertices
      *
      * @param name the name of the edge
-     * @param sV the vertex which the edge goes out from
-     * @param eV the vertex which the edge points towards
+     * @param sV   the vertex which the edge goes out from
+     * @param eV   the vertex which the edge points towards
      */
     public Edge(String name, Vertex sV, Vertex eV) {
         this.selfPointed = false;
@@ -46,7 +46,7 @@ public class Edge {
      * The constructor for a self pointing edge
      *
      * @param name the name of the edge
-     * @param v the vertex which the edge points towards
+     * @param v    the vertex which the edge points towards
      */
     public Edge(String name, Vertex v) {
         this.selfPointed = true;
@@ -54,7 +54,7 @@ public class Edge {
         this.vertex = v;
         this.xPos = v.getXPos();
         this.yPos = v.getYPos();
-        URL imageURL = getClass().getClassLoader().getResource("io/github/chaoscat/combigraphz/resources/Self-edge.png");
+        URL imageURL = getClass().getClassLoader().getResource("Self-edge.png");
         try {
             this.image = read(imageURL);
         } catch (IOException ex) {

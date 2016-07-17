@@ -1,5 +1,4 @@
-/bin/
 .idea/
 CombiGraphz.iml
 out/
-src/META-INF/
+src/main/java/META-INF/

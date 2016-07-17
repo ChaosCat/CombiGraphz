@@ -191,9 +191,11 @@ public class MainFrame extends JFrame implements ActionListener {
         JTextField yPosTextArea = new JTextField();
         yPosTextArea.setBorder(border);
         yPosTextArea.addKeyListener(new KeyListener() {
+
             @Override
             public void keyPressed(KeyEvent ke) {
             }
+
             @Override
             public void keyReleased(KeyEvent ke) {
             }
